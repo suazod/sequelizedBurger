@@ -1,0 +1,52 @@
+body {
+  background-color: #F9CC68;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Mogra', cursive;
+}
+
+ul {
+  margin:0;
+  padding: 0;
+}
+
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+  list-style-type: none;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.info {
+  font-size: 12px;
+}
+
+img {
+	margin: 0 10px;
+	transition: all 0.4s ease-in-out;
+}
+
+.float-animation {
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
